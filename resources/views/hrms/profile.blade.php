@@ -14,7 +14,8 @@
                         </div>
                         <div class="panel-body pn pb5 text-center">
                             <hr class="short br-lighter">
-                            <img src="{{($details->photo) ? $details->photo : '/assets/img/avatars/profile_pic.png'}}" width="80px" height="80px" class="img-circle img-thumbnail" alt="User Image">
+                            <img src="{{($details->photo) ? $details->photo : '/assets/img/avatars/profile_pic.png'}}" 
+                            width="80px" height="80px" class="img-circle img-thumbnail" alt="User Image">
 
                         </div>
                         <p class="text-center no-margin">{{$details->userrole->role->name}}</p>
