@@ -1,10 +1,6 @@
-<style>
-    .btn{
-        background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
-    }
-</style>
+
 <header class="navbar navbar-fixed-top bg-system">
-    <div style="background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);" 
+    <div style="background: radial-gradient(circle at -1% 57.5%, #13AA52 0%, #00662B 90%);" 
     class="navbar-logo-wrapper bg-system">
         <a class="navbar-logo-text" href="#">
             <b> H R M S </b>
@@ -35,12 +31,14 @@
                 <ul class="dropdown-menu list-group keep-dropdown w250" role="menu">
                     @if(\Route::getFacadeRoot()->current()->uri() != 'change-password')
                     <li class="dropdown-footer text-center">
-                        <a href="/change-password"  class="btn btn-primary btn-sm btn-bordered">
+                        <a href="/change-password" class="btn btn-sm btn-bordered" 
+                        style="background: radial-gradient(circle at -1% 57.5%, #13AA52 0%, #00662B 90%);">
                             <span class="fa fa-lock pr5"></span> Change Password </a>
                     </li>
                     @endif
                     <li class="dropdown-footer text-center">
-                        <a href="/logout" class="btn btn-primary btn-sm btn-bordered">
+                        <a href="/logout" class="btn btn-sm btn-bordered" 
+                        style="background: radial-gradient(circle at -1% 57.5%, #13AA52 0%, #00662B 90%);">
                             <span class="fa fa-power-off pr5"></span> Logout </a>
                     </li>
                 </ul>

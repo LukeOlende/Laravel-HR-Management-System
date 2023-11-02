@@ -2,44 +2,24 @@
 <html>
 
 <head>
-    <!-- -------------- Meta and Title -------------- -->
     <meta charset="utf-8">
-    <title> HRMS </title>
-    <meta name="keywords" content="HTML5, Bootstrap 3, Admin Template, UI Theme"/>
-    <meta name="description" content="Alliance - A Responsive HTML5 Admin UI Framework">
-    <meta name="author" content="ThemeREX">
+    <title> Human Resource Management System </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- -------------- Fonts -------------- -->
     <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700'>
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic' rel='stylesheet'
-          type='text/css'>
-
-
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <!-- -------------- Icomoon -------------- -->
     {!! Html::style('/assets/fonts/icomoon/icomoon.css') !!}
-
-            <!-- -------------- CSS - theme -------------- -->
+    <!-- -------------- CSS - theme -------------- -->
     {!! Html::style('/assets/skin/default_skin/css/theme.css') !!}
-
-            <!-- -------------- CSS - allcp forms -------------- -->
+    <!-- -------------- CSS - allcp forms -------------- -->
     {!! Html::style('/assets/allcp/forms/css/forms.css') !!}
-
     {!! Html::style('/assets/custom.css') !!}
-
-            <!-- -------------- Favicon -------------- -->
+    <!-- -------------- Favicon -------------- -->
     <link rel="shortcut icon" href="/assets/img/favicon.png">
-
-    <!-- -------------- IE8 HTML5 support  -------------- -->
-    <!--[if lt IE 9]>
-    {!! Html::script('https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js') !!}
-    {!! Html::script('https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js') !!}
-    <![endif]-->
-
 </head>
 
 <body class="forms-wizard">
-
 <!-- -------------- Customizer -------------- -->
 <div id="customizer">
     <div class="panel">
