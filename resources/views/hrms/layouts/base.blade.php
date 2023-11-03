@@ -444,7 +444,7 @@
         <footer id="content-footer" class="affix">
             <div class="row">
                 <div class="col-md-6">
-                    <span class="footer-legal">Human Resource Management System © 2021 All rights reserved.</span>
+                    <span class="footer-legal">HR Management System © All rights reserved.</span>
                 </div>
                 <div class="col-md-6 text-right">
                     <span class="footer-meta"></span>
