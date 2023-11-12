@@ -42,7 +42,6 @@
                                 <h3 class="text-muted">
                                     <a href="{{route('employee-manager')}}" class="text-dark"> EMPLOYEE MANAGER</a>
                                 </h3>
-                                <!-- {{--<h2 class="fs50 mt5 mbn">385</h2>--}} -->
                             </div>
                         </div>
                     </div>
@@ -65,38 +64,39 @@
                     </div>
                 </div>
             </div>
-                <div class="col-sm-6 col-xl-3">
-                    <div class="panel panel-tile">
-                        <div class="panel-body" style="border: 2px solid black;">
-                            <div class="row pv10">
-                                <div class="col-xs-5 ph10">
-                                    <img src="{{ URL::asset('assets/img/pages/assets.png') }}"
-                                    class="img-responsive mauto" style="width: 85px;"  alt=""/>
-                                </div>
-                                <div class="col-xs-7 pl5">
-                                    <h3 class="text-muted"> 
-                                        <a href="{{route('asset-listing')}}" class="text-dark"> ASSET MANAGER </a></h3>
-                                </div>
+            <div class="col-sm-6 col-xl-3">
+                <div class="panel panel-tile">
+                    <div class="panel-body" style="border: 2px solid black;">
+                        <div class="row pv10">
+                            <div class="col-xs-5 ph10">
+                                <img src="{{ URL::asset('assets/img/pages/assets.png') }}"
+                                class="img-responsive mauto" style="width: 85px;"  alt=""/>
+                            </div>
+                            <div class="col-xs-7 pl5">
+                                <h3 class="text-muted"> 
+                                    <a href="{{route('asset-listing')}}" class="text-dark"> ASSET MANAGER </a></h3>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-xl-3">
-                    <div class="panel panel-tile">
-                        <div class="panel-body" style="border: 2px solid black;">
-                            <div class="row pv10">
-                                <div class="col-xs-5 ph10">
-                                    <img src="{{ URL::asset('assets/img/pages/expense.png') }}"
-                                    class="img-responsive mauto" style="width: 85px;" alt=""/></div>
-                                <div class="col-xs-7 pl5">
-                                    <h3 class="text-muted"> 
-                                        <a href="{{route('expense-list')}}" class="text-dark"> EXPENSE MANAGER </a>
-                                    </h3>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+                <div class="panel panel-tile">
+                    <div class="panel-body" style="border: 2px solid black;">
+                        <div class="row pv10">
+                            <div class="col-xs-5 ph10">
+                                <img src="{{ URL::asset('assets/img/pages/expense.png') }}"
+                                    class="img-responsive mauto" style="width: 85px;" alt=""/>
                                 </div>
+                            <div class="col-xs-7 pl5">
+                                <h3 class="text-muted"> 
+                                    <a href="{{route('expense-list')}}" class="text-dark"> EXPENSE MANAGER </a>
+                                </h3>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
             <div class="col-sm-6 col-xl-3">
                 <div class="panel panel-tile">
                     <div class="panel-body" style="border: 2px solid black;">

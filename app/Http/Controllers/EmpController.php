@@ -11,7 +11,7 @@ use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Response;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Session;
 use App\Http\Requests;
 use Illuminate\Support\Facades\Input;
 use Maatwebsite\Excel\Facades\Excel;
@@ -261,8 +261,10 @@ class EmpController extends Controller
 
         $emp = Employee::find($id);
         $emp->delete();
+        $user = User::find($id);
+        $user->delete();
 
-        \Session::flash('flash_message', 'Employee successfully Deleted!');
+        Session::flash('flash_message', 'Employee successfully Deleted!');
 
         return redirect()->back();
     }
@@ -282,7 +284,7 @@ class EmpController extends Controller
                 $rows = $reader->get(['emp_name', 'emp_code', 'emp_status', 'role', 'gender', 'dob', 'doj', 'mob_number', 'qualification', 'emer_number', 'pan_number', 'father_name', 'address', 'permanent_address', 'formalities', 'offer_acceptance', 'prob_period', 'doc', 'department', 'salary', 'account_number', 'bank_name', 'ifsc_code', 'pf_account_number', 'un_number', 'pf_status', 'dor', 'notice_period', 'last_working_day', 'full_final']);
 
                 foreach ($rows as $row) {
-\Log::info($row->role);
+                Log::info($row->role);
                     $user           = new User;
                     $user->name     = $row->emp_name;
                     $user->email    = str_replace(' ', '_', $row->emp_name) . '@sipi-ip.sg';
@@ -430,7 +432,7 @@ class EmpController extends Controller
 
                     $userRole          = new UserRole();
                     $userRole->role_id = convertRole($row->role);
-                    $userRole->user_id = $user->id;
+                    // $userRole->user_id = $user->id;
                     $userRole->save();
 
                 }
@@ -442,7 +444,7 @@ class EmpController extends Controller
         /*catch (\Exception $e) {
            return $e->getMessage();*/
 
-        \Session::flash('success', ' Employee details uploaded successfully.');
+        Session::flash('success', ' Employee details uploaded successfully.');
 
         return redirect()->back();
     }
@@ -539,7 +541,7 @@ class EmpController extends Controller
             $model->save();
             return json_encode('success');
         } catch (\Exception $e) {
-            \Log::info($e->getMessage() . ' on ' . $e->getLine() . ' in ' . $e->getFile());
+            Log::info($e->getMessage() . ' on ' . $e->getLine() . ' in ' . $e->getFile());
             return json_encode('failed');
         }
 
@@ -569,7 +571,7 @@ class EmpController extends Controller
         $process->salary = $request->new_salary;
         $process->save();
 
-        \DB::table('user_roles')->where('user_id', $process->user_id)->update(['role_id' => $request->new_designation]);
+        DB::table('user_roles')->where('user_id', $process->user_id)->update(['role_id' => $request->new_designation]);
 
         $promotion                    = new Promotion();
         $promotion->emp_id            = $request->emp_id;
@@ -580,7 +582,7 @@ class EmpController extends Controller
         $promotion->date_of_promotion = date_format(date_create($request->date_of_promotion), 'Y-m-d');
         $promotion->save();
 
-        \Session::flash('flash_message', 'Employee successfully Promoted!');
+        Session::flash('flash_message', 'Employee successfully Promoted!');
         return redirect()->back();
     }
 

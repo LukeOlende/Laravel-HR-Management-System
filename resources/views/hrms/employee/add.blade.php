@@ -20,218 +20,24 @@
 </head>
 
 <body class="forms-wizard">
-<!-- -------------- Customizer -------------- -->
-<div id="customizer">
-    <div class="panel">
-        <div class="panel-heading">
-        <span class="panel-icon">
-          <i class="fa fa-cogs"></i>
-        </span>
-            <span class="panel-title"> Theme Options</span>
-        </div>
-        <div class="panel-body pn">
-            <ul class="nav nav-list nav-list-sm" role="tablist">
-                <li class="active">
-                    <a href="customizer-header" role="tab" data-toggle="tab">Navbar</a>
-                </li>
-                <li>
-                    <a href="customizer-sidebar" role="tab" data-toggle="tab">Sidebar</a>
-                </li>
-                <li>
-                    <a href="customizer-settings" role="tab" data-toggle="tab">Misc</a>
-                </li>
-            </ul>
-            <div class="tab-content p20 ptn pb15">
-                <div role="tabpanel" class="tab-pane active" id="customizer-header">
-                    <form id="customizer-header-skin">
-                        <h6 class="mv20">Header Skins</h6>
-
-                        <div class="customizer-sample">
-                            <table>
-                                <tr>
-                                    <td>
-                                        <div class="checkbox-custom fill checkbox-dark mb10">
-                                            <input type="radio" name="headerSkin" id="headerSkin5" checked
-                                                   value="bg-dark">
-                                            <label for="headerSkin5">Dark</label>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="checkbox-custom fill checkbox-warning mb10">
-                                            <input type="radio" name="headerSkin" id="headerSkin2" value="bg-warning">
-                                            <label for="headerSkin2">Warning</label>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="checkbox-custom fill checkbox-danger mb10">
-                                            <input type="radio" name="headerSkin" id="headerSkin3" value="bg-danger">
-                                            <label for="headerSkin3">Danger</label>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="checkbox-custom fill checkbox-success mb10">
-                                            <input type="radio" name="headerSkin" id="headerSkin4" value="bg-success">
-                                            <label for="headerSkin4">Success</label>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="checkbox-custom fill checkbox-primary mb10">
-                                            <input type="radio" name="headerSkin" id="headerSkin6" value="bg-primary">
-                                            <label for="headerSkin6">Primary</label>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="checkbox-custom fill checkbox-info mb10">
-                                            <input type="radio" name="headerSkin" id="headerSkin7" value="bg-info">
-                                            <label for="headerSkin7">Info</label>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="checkbox-custom fill checkbox-alert mb10">
-                                            <input type="radio" name="headerSkin" id="headerSkin8" value="bg-alert">
-                                            <label for="headerSkin8">Alert</label>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="checkbox-custom fill checkbox-system mb10">
-                                            <input type="radio" name="headerSkin" id="headerSkin9" value="bg-system">
-                                            <label for="headerSkin9">System</label>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-
-                            <div class="checkbox-custom checkbox-disabled fill mb10">
-                                <input type="radio" name="headerSkin" id="headerSkin1" value="bgc-light">
-                                <label for="headerSkin1">Light</label>
-                            </div>
-                        </div>
-                    </form>
-                    <form id="customizer-footer-skin">
-                        <h6 class="mv20">Footer Skins</h6>
-
-                        <div class="customizer-sample">
-                            <table>
-                                <tr>
-                                    <td>
-                                        <div class="checkbox-custom fill checkbox-dark mb10">
-                                            <input type="radio" name="footerSkin" id="footerSkin1" checked value="">
-                                            <label for="footerSkin1">Dark</label>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="checkbox-custom checkbox-disabled fill mb10">
-                                            <input type="radio" name="footerSkin" id="footerSkin2" value="footer-light">
-                                            <label for="footerSkin2">Light</label>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </form>
-                </div>
-                <div role="tabpanel" class="tab-pane" id="customizer-sidebar">
-                    <form id="customizer-sidebar-skin">
-                        <h6 class="mv20">Sidebar Skins</h6>
-
-                        <div class="customizer-sample">
-                            <div class="checkbox-custom fill checkbox-dark mb10">
-                                <input type="radio" name="sidebarSkin" checked id="sidebarSkin2" value="">
-                                <label for="sidebarSkin2">Dark</label>
-                            </div>
-                            <div class="checkbox-custom fill checkbox-disabled mb10">
-                                <input type="radio" name="sidebarSkin" id="sidebarSkin1" value="sidebar-light">
-                                <label for="sidebarSkin1">Light</label>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div role="tabpanel" class="tab-pane" id="customizer-settings">
-                    <form id="customizer-settings-misc">
-                        <h6 class="mv20 mtn">Layout Options</h6>
-
-                        <div class="form-group">
-                            <div class="checkbox-custom fill mb10">
-                                <input type="checkbox" checked="" id="header-option">
-                                <label for="header-option">Fixed Header</label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="checkbox-custom fill mb10">
-                                <input type="checkbox" checked="" id="sidebar-option">
-                                <label for="sidebar-option">Fixed Sidebar</label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="checkbox-custom fill mb10">
-                                <input type="checkbox" id="breadcrumb-option">
-                                <label for="breadcrumb-option">Fixed Breadcrumbs</label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="checkbox-custom fill mb10">
-                                <input type="checkbox" id="breadcrumb-hidden">
-                                <label for="breadcrumb-hidden">Hide Breadcrumbs</label>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="form-group mn pb35 pt25 text-center">
-                <a href="#" id="clearAll" class="btn btn-primary btn-bordered btn-sm">Clear All</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- -------------- /Customizer -------------- -->
-
-<!-- -------------- Body Wrap  -------------- -->
 <div id="main">
-
-    <!-- -------------- Header  -------------- -->
-    @include('hrms.layouts.header')
-            <!-- -------------- /Header  -------------- -->
-
-    <!-- -------------- Sidebar  -------------- -->
+    @include('hrms.layouts.base')
     <aside id="sidebar_left" class="nano nano-light affix">
-
-        <!-- -------------- Sidebar Left Wrapper  -------------- -->
         <div class="sidebar-left-content nano-content">
-
-            <!-- -------------- Sidebar Header -------------- -->
             <header class="sidebar-header">
-
-
                 @include('hrms.layouts.sidebar')
-
-                        <!-- -------------- Sidebar Hide Button -------------- -->
                 <div class="sidebar-toggler">
                     <a href="/dashboard">
                         <span class="fa fa-arrow-circle-o-left"></span>
                     </a>
                 </div>
-                <!-- -------------- /Sidebar Hide Button -------------- -->
-
             </header>
         </div>
-        <!-- -------------- /Sidebar Left Wrapper  -------------- -->
-
     </aside>
-
-    <!-- -------------- Main Wrapper -------------- -->
+    
     <section id="content_wrapper">
-
-        <!-- -------------- Topbar -------------- -->
         <header id="topbar" class="alt">
-
             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
-
                 <div class="topbar-left">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-icon">
@@ -270,9 +76,7 @@
 
             @endif
         </header>
-        <!-- -------------- /Topbar -------------- -->
-
-        <!-- -------------- Content -------------- -->
+    
         <section id="content" class="animated fadeIn">
 
             <div class="mw1000 center-block">
@@ -285,8 +89,6 @@
                     </div>
                     @endif
 
-                            <!-- -------------- Wizard -------------- -->
-                    <!-- -------------- Spec Form -------------- -->
                     <div class="allcp-form">
 
                         <form method="post" action="/" id="custom-form-wizard">
@@ -297,7 +99,7 @@
                                     <i class="fa fa-user pr5"></i> Personal Details</h4>
                                 <section class="wizard-section">
                                     <div class="section">
-                                        <label for="photo-upload"><h6 class="mb20 mt40"> Photo </h6></label>
+                                        <label for="photo-upload"><h6 class="mb20 mt40"> Photo (Optional) </h6></label>
                                         <label class="field prepend-icon append-button file">
                                             <span class="button">Choose File</span>
                                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
@@ -323,8 +125,6 @@
                                             @endif
                                         </label>
                                     </div>
-
-                                    <!-- -------------- /section -------------- -->
 
                                     <div class="section">
                                         <label for="input002"><h6 class="mb20 mt40">Employee Code</h6></label>
@@ -503,9 +303,8 @@
                                             </label>
                                     </div>
 
-
                                     <div class="section">
-                                        <label for="input002"><h6 class="mb20 mt40"> Emergency Number </h6></label>
+                                        <label for="input002"><h6 class="mb20 mt40"> Emergency Number (Optional)</h6></label>
                                         <label for="input002" class="field prepend-icon">
                                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
                                                 <input type="number" name="emer_number" id="emergency_number"
@@ -525,9 +324,8 @@
                                         </label>
                                     </div>
 
-
                                     <div class="section">
-                                        <label for="input002"><h6 class="mb20 mt40"> PAN Number </h6></label>
+                                        <label for="input002"><h6 class="mb20 mt40"> PAN Number (Optional)</h6></label>
                                         <label for="input002" class="field prepend-icon">
                                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
                                                 <input type="text" name="pan_number" id="pan_number" class="gui-input"
@@ -540,9 +338,8 @@
                                         </label>
                                     </div>
 
-
                                     <div class="section">
-                                        <label for="input002"><h6 class="mb20 mt40"> Father's Name </h6></label>
+                                        <label for="input002"><h6 class="mb20 mt40"> Father's Name (Optional) </h6></label>
                                         <label for="input002" class="field prepend-icon">
                                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
                                                 <input type="text" name="father_name" id="father_name" class="gui-input"
@@ -556,9 +353,8 @@
                                         </label>
                                     </div>
 
-
                                     <div class="section">
-                                        <label for="input002"><h6 class="mb20 mt40"> Current Address </h6></label>
+                                        <label for="input002"><h6 class="mb20 mt40"> Current Address (Optional) </h6></label>
                                         <label for="input002" class="field prepend-icon">
                                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
                                                 <input type="text" name="address" id="address" class="gui-input"
@@ -575,7 +371,6 @@
                                             @endif
                                         </label>
                                     </div>
-
 
                                     <div class="section">
                                         <label for="input002"><h6 class="mb20 mt40"> Permanent Address </h6></label>
@@ -597,14 +392,14 @@
                                             @endif
                                         </label>
                                     </div>
-                                    <!-- -------------- /section -------------- -->
+                                    
                                 </section>
 
                                 <!-- -------------- step 2 -------------- -->
                                 <h4 class="wizard-section-title">
                                     <i class="fa fa-user-secret pr5"></i> Employment details</h4>
                                 <section class="wizard-section">
-                                    <!-- -------------- /section -------------- -->
+                                    
                                     <div class="section">
                                         <label for="input002"><h6 class="mb20 mt40"> Joining Formalities </h6></label>
 
@@ -679,11 +474,7 @@
                                                     </select>
                                             <input type="text" class="form-control probation_text hidden" id="probation_text">
                                                 @endif
-
-
                                     </div>
-
-
 
                                     <div class="section">
                                         <label for="datepicker5" class="field prepend-icon mb5"><h6 class="mb20 mt40">
@@ -705,7 +496,6 @@
                                         </div>
                                     </div>
 
-
                                     <div class="section">
                                         <label for="input002"><h6 class="mb20 mt40"> Department </h6></label>
                                             <select class="select2-single form-control" name="department" id="department">
@@ -713,21 +503,30 @@
                                                 @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
                                                     @if($emps->employee->department == 'Marketplace')
                                                         <option value="Marketplace" selected>Marketplace</option>
-                                                        <option value="Social Media">Social Media</option>
+                                                        <option value="Finance">Finance</option>
                                                         <option value="IT">IT</option>
-                                                    @elseif($emps->employee->department == 'Social Media')
+                                                        <option value="Operations">Operations</option>
+                                                    @elseif($emps->employee->department == 'Finance')
                                                         <option value="Marketplace">Marketplace</option>
-                                                        <option value="Social Media" selected>Social Media</option>
+                                                        <option value="Finance" selected>Finance</option>
                                                         <option value="IT">IT</option>
+                                                        <option value="Operations">Operations</option>
+                                                    @elseif($emps->employee->department == 'IT')
+                                                        <option value="Marketplace">Marketplace</option>
+                                                        <option value="Finance">Finance</option>
+                                                        <option value="IT" selected>IT</option>
+                                                        <option value="Operations">Operations</option>
                                                     @else
                                                         <option value="Marketplace">Marketplace</option>
-                                                        <option value="Social Media">Social Media</option>
-                                                        <option value="IT" selected>IT</option>
+                                                        <option value="Finance">Finance</option>
+                                                        <option value="IT">IT</option>
+                                                        <option value="Operations" selected>Operations</option>
                                                     @endif
                                                 @else
                                                     <option value="Marketplace">Marketplace</option>
-                                                    <option value="Social Media">Social Media</option>
+                                                    <option value="Finance">Finance</option>
                                                     <option value="IT">IT</option>
+                                                    <option value="Operations">Operations</option>
                                                 @endif
                                             </select>
                                     </div>
@@ -740,20 +539,12 @@
                                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
                                                 <input type="text" name="salary" id="salary" class="gui-input"
                                                        value="@if($emps && $emps->employee->salary){{$emps->employee->salary}}@endif" readonly>
-                                                <label for="input002" class="field-icon">
-                                                    <i class="fa fa-inr"></i>
-                                                </label>
                                             @else
                                                 <input type="text" placeholder="e.g 12000" name="salary"
                                                        id="salary" class="gui-input">
-                                                <label for="input002" class="field-icon">
-                                                    <i class="fa fa-inr"></i>
-                                                </label>
                                             @endif
                                         </label>
                                     </div>
-                                    <!-- -------------- /section -------------- -->
-
 
                                 </section>
 
@@ -761,10 +552,6 @@
                                 <h4 class="wizard-section-title">
                                     <i class="fa fa-file-text pr5"></i> Banking Details</h4>
                                 <section class="wizard-section">
-
-
-                                    <!-- -------------- /section -------------- -->
-
 
                                     <div class="section">
                                         <label for="input002"><h6 class="mb20 mt40"> Bank Account Number </h6></label>
@@ -808,7 +595,7 @@
 
 
                                     <div class="section">
-                                        <label for="input002"><h6 class="mb20 mt40"> IFSC Code </h6></label>
+                                        <label for="input002"><h6 class="mb20 mt40"> IFSC Code (Optional) </h6></label>
                                         <label for="input002" class="field prepend-icon">
                                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
                                                 <input type="text" name="ifsc_code" id="ifsc_code" class="gui-input"
@@ -828,7 +615,7 @@
 
 
                                     <div class="section">
-                                        <label for="input002"><h6 class="mb20 mt40"> PF Account Number </h6></label>
+                                        <label for="input002"><h6 class="mb20 mt40"> PF Account Number (Optional) </h6></label>
                                         <label for="input002" class="field prepend-icon">
                                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
                                                 <input type="text" name="pf_account_number" id="pf_account_number"
@@ -849,7 +636,7 @@
                                     </div>
 
                                    <div class="section">
-                                       <label for="input002"><h6 class="mb20 mt40"> UN Number</h6></label>
+                                       <label for="input002"><h6 class="mb20 mt40"> UN Number (Optional) </h6></label>
                                        <label for="input002" class="field prepend-icon">
                                            @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
                                               <input type="text" name="un_number" id="un_number" class="gui-input"
@@ -868,7 +655,7 @@
 
 
                                     <div class="section">
-                                        <label for="input002"><h6 class="mb20 mt40"> PF Status </h6></label>
+                                        <label for="input002"><h6 class="mb20 mt40"> PF Status (Optional) </h6></label>
 
                                         <div class="option-group field">
                                             <label class="field option mb5">
@@ -972,25 +759,14 @@
                                     </div>
                                 </section>
                             </div>
-                            <!-- -------------- /Wizard -------------- -->
-
                         </form>
-                        <!-- -------------- /Form -------------- -->
-
                     </div>
-                    <!-- -------------- /Spec Form -------------- -->
-
-            </div>
+                </div>
 
         </section>
-        <!-- -------------- /Content -------------- -->
-
     </section>
 
-    <!-- -------------- Sidebar Right -------------- -->
-    <aside id="sidebar_right" class="nano affix">
-
-        <!-- -------------- Sidebar Right Content -------------- -->
+    <!-- <aside id="sidebar_right" class="nano affix">
         <div class="sidebar-right-wrapper nano-content">
 
             <div class="sidebar-block br-n p15">
@@ -1064,7 +840,7 @@
                 </h6>
             </div>
         </div>
-    </aside>
+    </aside> -->
     <!-- -------------- /Sidebar Right -------------- -->
 
 </div>
