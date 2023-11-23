@@ -1,9 +1,7 @@
 @extends('hrms.layouts.base')
 
 @section('content')
-        <!-- START CONTENT -->
 <div class="content">
-
     <header id="topbar" class="alt">
         <div class="topbar-left">
             <ol class="breadcrumb">
@@ -15,28 +13,20 @@
                 <li class="breadcrumb-active">
                     <a href="/dashboard"> Dashboard </a>
                 </li>
-                <li class="breadcrumb-link">
-                    <a href=""> Assets </a>
-                </li>
-                <li class="breadcrumb-current-item"> Asset Listings </li>
+                <li class="breadcrumb-link" style="color:black;font-size:16px">Assets </li>
+                <li class="breadcrumb-current-item" style="color:black;font-size:16px"> Asset Listings </li>
             </ol>
         </div>
     </header>
 
-
-    <!-- -------------- Content -------------- -->
     <section id="content" class="table-layout animated fadeIn">
-
-        <!-- -------------- Column Center -------------- -->
         <div class="chute chute-center">
-
-            <!-- -------------- Products Status Table -------------- -->
             <div class="row">
                 <div class="col-xs-12">
                     <div class="box box-success">
                     <div class="panel">
                         <div class="panel-heading">
-                            <span class="panel-title hidden-xs"> Asset Lists </span>
+                            <span class="panel-title hidden-xs" style="color:black"> Asset Lists </span>
                         </div>
                         <div class="panel-body pn">
 
@@ -61,14 +51,13 @@
                                 @foreach($assets as $asset)
                                     <tr>
                                         <td class="text-center">{{$i+=1}}</td>
-
                                         <td class="text-center">{{$asset->name}}</td>
                                         <td class="text-center">{{$asset->description}}</td>
                                         <td class="text-center">
                                             <div class="btn-group text-right">
-                                                <button type="button"
-                                                        class="btn btn-success br2 btn-xs fs12 dropdown-toggle"
-                                                        data-toggle="dropdown" aria-expanded="false"> Action
+                                                <button type="button" class="btn btn-success br2 btn-xs fs12 dropdown-toggle"
+                                                    data-toggle="dropdown" aria-expanded="false">
+                                                    Action
                                                     <span class="caret ml5"></span>
                                                 </button>
                                                 <ul class="dropdown-menu" role="menu">

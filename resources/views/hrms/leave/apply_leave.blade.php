@@ -128,11 +128,11 @@
                                     <div class="form-group">
                                         <label class="col-md-2 control-label"></label>
                                         <div class="col-md-2">
-                                            <input type="submit" class="btn btn-info btn-block" value="Submit"
+                                            <input type="submit" class="btn btn-success btn-block" value="Submit"
                                             style="background: radial-gradient(circle at -1% 57.5%, #13AA52 0%, #00662B 90%);">
                                         </div>
                                         <div class="col-md-2"><a href="/apply-leave" >
-                                            <input type="button" class="btn btn-success btn-block" value="Reset"
+                                            <input type="button" class="btn btn-danger btn-block" value="Reset"
                                             style="background: linear-gradient(108.4deg, #FD2C38 3.3%, #B0020C 98.4%);"></a>
                                         </div>
 

@@ -1,9 +1,7 @@
 @extends('hrms.layouts.base')
 
 @section('content')
-        <!-- START CONTENT -->
 <div class="content">
-
     <header id="topbar" class="alt">
         <div class="topbar-left">
             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-asset-assignment/{id}')
@@ -16,13 +14,13 @@
                     <li class="breadcrumb-active">
                         <a href="/dashboard"> Dashboard </a>
                     </li>
-                    <li class="breadcrumb-link">
-                        <a href=""> Assets </a>
+                    <li class="breadcrumb-link" style="color:black;font-size:16px">
+                        Assets 
                     </li>
-                    <li class="breadcrumb-current-item"> Edit </li>
+                    <li class="breadcrumb-current-item" style="color:black;font-size:16px"> 
+                        Edit 
+                    </li>
                 </ol>
-
-
             @else
                 <ol class="breadcrumb">
                     <li class="breadcrumb-icon">
@@ -33,17 +31,18 @@
                     <li class="breadcrumb-active">
                         <a href="/dashboard"> Dashboard </a>
                     </li>
-                    <li class="breadcrumb-link">
-                        <a href=""> Assets </a>
+                    <li class="breadcrumb-link" style="color:black;font-size:16px">
+                        Assets 
                     </li>
-                    <li class="breadcrumb-current-item"> Assign Assets </li>
+                    <li class="breadcrumb-current-item" style="color:black;font-size:16px">
+                        Assign Assets 
+                    </li>
                 </ol>
             @endif
         </div>
     </header>
-    <!-- -------------- Content -------------- -->
+
     <section id="content" class="table-layout animated fadeIn" >
-        <!-- -------------- Column Center -------------- -->
         <div class="chute-affix" data-spy="affix" data-offset-top="200">
             <div class="row">
                 <div class="col-xs-12">
@@ -51,9 +50,9 @@
                     <div class="panel">
                         <div class="panel-heading">
                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-asset-assignment/{id}')
-                                <span class="panel-title hidden-xs"> Edit Asset Assignment </span>
+                                <span class="panel-title hidden-xs" style="color: black;"> Edit Asset Assignment </span>
                             @else
-                                <span class="panel-title hidden-xs"> Assign Asset</span>
+                                <span class="panel-title hidden-xs" style="color: black;"> Assign Asset</span>
                             @endif
                         </div>
 
@@ -91,7 +90,7 @@
                                             <select class="select2-multiple form-control select-primary"
                                                     name="asset_id" required>
                                                 @foreach($assets as $asset)
-                                                    @if($asset->id == $assigns->asset_id))
+                                                    @if($asset->id == $assigns->asset_id)
                                                     <option value="{{$asset->id}}" selected>{{$asset->name}}</option>
                                                     @else
                                                         <option value="{{$asset->id}}">{{$asset->name}}</option>

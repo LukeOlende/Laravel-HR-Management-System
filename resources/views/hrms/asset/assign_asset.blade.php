@@ -1,7 +1,11 @@
 @extends('hrms.layouts.base')
 
 @section('content')
-        <!-- START CONTENT -->
+<style>
+    label{
+        color: black;
+    }
+</style>
 <div class="content">
 
     <header id="topbar" class="alt">
@@ -16,10 +20,8 @@
                     <li class="breadcrumb-active">
                         <a href="/dashboard"> Dashboard </a>
                     </li>
-                    <li class="breadcrumb-link">
-                        <a href=""> Assets </a>
-                    </li>
-                    <li class="breadcrumb-current-item"> Edit {{$assets->name}} </li>
+                    <li class="breadcrumb-link" style="color:black;font-size:16px">Assets</li>
+                    <li class="breadcrumb-current-item" style="color:black;font-size:16px">Edit {{$assets->name}}</li>
                 </ol>
 
 
@@ -33,17 +35,17 @@
                 <li class="breadcrumb-active">
                     <a href="/dashboard"> Dashboard </a>
                 </li>
-                <li class="breadcrumb-link">
-                    <a href=""> Assets </a>
+                <li class="breadcrumb-link" style="color:black;font-size:16px">
+                    Assets
                 </li>
-                <li class="breadcrumb-current-item"> Assign Assets </li>
+                <li class="breadcrumb-current-item" style="color:black;font-size:16px"> 
+                    Assign Assets 
+                </li>
             </ol>
             @endif
         </div>
     </header>
-    <!-- -------------- Content -------------- -->
     <section id="content" class="table-layout animated fadeIn" >
-        <!-- -------------- Column Center -------------- -->
         <div class="chute-affix" data-spy="affix" data-offset-top="200">
             <div class="row">
                 <div class="col-xs-12">
@@ -51,9 +53,9 @@
                     <div class="panel">
                         <div class="panel-heading">
                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-asset-assignment/{id}')
-                                <span class="panel-title hidden-xs"> Edit Asset Assignment </span>
+                                <span class="panel-title hidden-xs" style="color: black;"> Edit Asset Assignment </span>
                             @else
-                                <span class="panel-title hidden-xs"> Assign Asset</span>
+                                <span class="panel-title hidden-xs" style="color: black;"> Assign Asset</span>
                             @endif
                         </div>
 
@@ -107,7 +109,6 @@
                                             </div>
                                         </div>
 
-
                                         <div class="form-group">
                                         <label for="datepicker1" class="col-md-3 control-label"> Date of Assignment </label>
                                             <div class="col-md-6">
@@ -122,9 +123,7 @@
                                                         @endif
                                                     </div>
                                             </div>
-                                            </div>
-
-
+                                        </div>
 
                                         <div class="form-group">
                                             <label for="datepicker4" class="col-md-3 control-label"> Date of Release </label>
@@ -151,16 +150,18 @@
                                             </div>
                                         </div>
 
-
-
                                         <div class="form-group">
                                             <label class="col-md-3 control-label"></label>
                                             <div class="col-md-2">
-
-                                                     <input type="submit" class="btn btn-bordered btn-info btn-block" value="Submit">
+                                                <input type="submit" class="btn btn-success btn-block" value="Submit"
+                                                style="background: radial-gradient(circle at -1% 57.5%, #13AA52 0%, #00662B 90%);">
                                             </div>
-                                            <div class="col-md-2"><a href="/assign-asset" >
-                                                    <input type="button" class="btn btn-bordered btn-success btn-block" value="Reset"></a></div>
+                                            <div class="col-md-2">
+                                                <a href="/assign-asset" >
+                                                    <input type="button" class="btn btn-danger btn-block" value="Reset"
+                                                    style="background: linear-gradient(108.4deg, #FD2C38 3.3%, #B0020C 98.4%);">
+                                                </a>
+                                            </div>
                                         </div>
                                         </div>
 
