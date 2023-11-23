@@ -56,7 +56,7 @@
                             {!! Form::close() !!}
                             <div class="col-md-2">
                                 <a href="/employee-manager">
-                                    <input type="submit" value="Reset" class="btn btn-warning" 
+                                    <input type="submit" value="Reset" class="btn btn-danger" 
                                     style="background: linear-gradient(108.4deg, #FD2C38 3.3%, #B0020C 98.4%);">
                                 </a>
                             </div>
