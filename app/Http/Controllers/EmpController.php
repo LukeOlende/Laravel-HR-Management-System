@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Session;
 use App\Http\Requests;
 use Illuminate\Support\Facades\Input;
 use Maatwebsite\Excel\Facades\Excel;
+use Illuminate\Support\Facades\DB;
+// use Log;
 
 class EmpController extends Controller
 {

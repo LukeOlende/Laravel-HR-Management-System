@@ -1,9 +1,7 @@
 @extends('hrms.layouts.base')
 
 @section('content')
-        <!-- START CONTENT -->
 <div class="content">
-
     <header id="topbar" class="alt">
         <div class="topbar-left">
             <ol class="breadcrumb">
@@ -15,28 +13,20 @@
                 <li class="breadcrumb-active">
                     <a href="/dashboard"> Dashboard </a>
                 </li>
-                <li class="breadcrumb-link">
-                    <a href=""> Leaves </a>
-                </li>
-                <li class="breadcrumb-current-item"> Total Leave Requests </li>
+                <li class="breadcrumb-link" style="color: black;font-size: 16px">Leaves</li>
+                <li class="breadcrumb-current-item" style="color: black;font-size: 16px"> Total Leave Requests </li>
             </ol>
         </div>
     </header>
 
-
-    <!-- -------------- Content -------------- -->
     <section id="content" class="table-layout animated fadeIn">
-
-        <!-- -------------- Column Center -------------- -->
         <div class="chute chute-center">
-
-            <!-- -------------- Products Status Table -------------- -->
             <div class="row">
                 <div class="col-xs-12">
                     <div class="box box-success">
                     <div class="panel">
                         <div class="panel-heading">
-                            <span class="panel-title hidden-xs"> Total Leave Lists </span><br />
+                            <span class="panel-title hidden-xs" style="color: black;"> Total Leave Lists </span><br />
                         </div><br />
                         <div class="panel-menu allcp-form theme-primary mtn">
                             <div class="row">
@@ -61,16 +51,20 @@
                                 </div>
 
                                 <div class="col-md-2"><br />
-                                    <input type="submit" value="Search" name="button" class="btn btn-primary">
+                                    <input type="submit" value="Search" name="button" class="btn btn-primary"
+                                    style="background: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);">
                                 </div>
 
                                 <div class="col-md-2"><br />
-                                    <input type="submit" value="Export" name="button" class="btn btn-success">
+                                    <input type="submit" value="Export" name="button" class="btn btn-success"
+                                    style="background: radial-gradient(circle at -1% 57.5%, #13AA52 0%, #00662B 90%);">
                                 </div>
                                 {!! Form::close() !!}
                                 <div class="col-md-2"><br />
                                     <a href="/total-leave-list" >
-                                        <input type="submit" value="Reset" class="btn btn-warning"></a>
+                                        <input type="submit" value="Reset" class="btn btn-warning"
+                                        style="background: linear-gradient(108.4deg, #FD2C38 3.3%, #B0020C 98.4%);">
+                                    </a>
                                 </div>
 
                             </div>

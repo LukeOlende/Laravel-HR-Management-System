@@ -1,9 +1,12 @@
 @extends('hrms.layouts.base')
 
 @section('content')
-        <!-- START CONTENT -->
+<style>
+    label{
+        color: black;
+    }
+</style>
 <div class="content">
-
     <header id="topbar" class="alt">
         <div class="topbar-left">
             <ol class="breadcrumb">
@@ -15,23 +18,20 @@
                 <li class="breadcrumb-active">
                     <a href="/dashboard"> Dashboard </a>
                 </li>
-                <li class="breadcrumb-link">
-                    <a href=""> Leave </a>
-                </li>
-                <li class="breadcrumb-current-item"> Apply Leave</li>
+                <li class="breadcrumb-link" style="color:black; font-size:16px;">Leave</li>
+                <li class="breadcrumb-current-item" style="color:black; font-size:16px;"> Apply Leave</li>
             </ol>
         </div>
     </header>
-    <!-- -------------- Content -------------- -->
+    
     <section id="content" class="table-layout animated fadeIn">
-        <!-- -------------- Column Center -------------- -->
         <div class="chute-affix" data-spy="affix" data-offset-top="200">
             <div class="row">
                 <div class="col-md-12">
                     <div class="box box-success">
                     <div class="panel">
                         <div class="panel-heading">
-                            <span class="panel-title hidden-xs"> Apply for Leave</span>
+                            <span class="panel-title hidden-xs" style="color:black"> Apply for Leave</span>
                         </div>
                     <div class="text-center" id="show-leave-count"></div>
                         <div class="panel-body pn">
@@ -125,17 +125,16 @@
                                         </div>
                                     </div>
 
-
                                     <div class="form-group">
                                         <label class="col-md-2 control-label"></label>
-
                                         <div class="col-md-2">
-
-                                                <input type="submit" class="btn btn-bordered btn-info btn-block"
-                                                             value="Submit">
+                                            <input type="submit" class="btn btn-info btn-block" value="Submit"
+                                            style="background: radial-gradient(circle at -1% 57.5%, #13AA52 0%, #00662B 90%);">
                                         </div>
                                         <div class="col-md-2"><a href="/apply-leave" >
-                                                <input type="button" class="btn btn-bordered btn-success btn-block" value="Reset"></a></div>
+                                            <input type="button" class="btn btn-success btn-block" value="Reset"
+                                            style="background: linear-gradient(108.4deg, #FD2C38 3.3%, #B0020C 98.4%);"></a>
+                                        </div>
 
                                     </div>
 
